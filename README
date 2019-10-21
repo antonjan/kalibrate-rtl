@@ -8,3 +8,11 @@ Copyright (c) 2010, Joshua Lackey (jl@thre.at)
 
 modified for use with rtl-sdr devices,
 Copyright (c) 2012, Steve Markgraf (steve@steve-m.de)
+# Compile
+sudo apt install build-essential libtool automake autoconf librtlsdr-dev libfftw3-dev<br>
+git clone https://github.com/steve-m/kalibrate-rtl<br>
+cd kalibrate-rtl<br>
+./bootstrap && CXXFLAGS='-W -Wall -O3'<br>
+./configure<br>
+make<br>
+sudo make install<br>
